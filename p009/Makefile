@@ -5,6 +5,12 @@ all :
 init :
 	sudo apt install texlive-base texlive-latex-recommended texlive texlive-latex-extra texlive-full texlive-publishers texlive-science texlive-pstricks texlive-pictures
 
+#anyway in .gitignore
+nec :
+	find . -name "*~"  -exec  rm {} \;
+	find . -name "*#*" -exec rm {} \;
+
+
 clean :
 	find . -name "*~"  -exec  rm {} ; rm *.ps *.dvi *.log *.out *.aux *#* \;
 	find . -name "*#*" -exec rm {} ; rm  *.ps *.dvi *.log *~ *.out *.aux \;
