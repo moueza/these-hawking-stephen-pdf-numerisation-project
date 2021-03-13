@@ -3,8 +3,9 @@ init :
 all :
 	pdflatex p008.tex
 clean :
-	find . -name "*~"  -exec  rm {} ; rm *.ps *.dvi *.log *.out *.aux *#* \;
-	find . -name "*#*" -exec rm {} ; rm  *.ps *.dvi *.log *~ *.out *.aux \;
+	find . -name "*~"  -exec rm {} \;
+	find . -name "*#*" -exec rm {}  \;
+	find . -name "*"   -exec rm *.ps *.dvi *.log *~ *.out *.aux \;
 
 roots :
 	latex  p008.tex
