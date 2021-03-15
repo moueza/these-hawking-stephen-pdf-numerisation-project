@@ -5,7 +5,7 @@ all :
 init :
 	sudo apt install texlive-base texlive-latex-recommended texlive texlive-latex-extra texlive-full texlive-publishers texlive-science texlive-pstricks texlive-pictures
 
-#anyway in .gitignore
+#anyway in .gitignore nessessaire : nec plus ultra
 nec :
 	find . -name "*~"  -exec  rm {} \;
 	find . -name "*#*" -exec rm {} \;
