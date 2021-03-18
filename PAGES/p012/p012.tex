@@ -22,6 +22,8 @@
 \usepackage{eurosym}
 \usepackage{systeme}
 \usepackage{enumerate}
+
+\usepackage{physics}
 %numerotation https://www.xm1math.net/doculatex/structure.html
 \renewcommand{\thesubsection}{\Roman{subsection}}
 
@@ -45,7 +47,11 @@
 
 Robertson
 
-$ds^2=dt^2-R^2(t)[((dr^2)/(1-K.r^2))+r^2.(d\theta^2+sin(\theta)^2d\phi ^2)]$
+%differential https://tex.stackexchange.com/questions/225523/how-to-write-partial-differential-equation-ex-dq-dt-ds-dt-with-real-partial-d
+$ds^2=dt^2-R^2(t)[((dr^2)/(1-K \cdot r^2))+r^2 \cdot (d\theta^2+sin(\theta)^2 \cdot d\phi ^2)]$
+
+%physics
+$\dv{s^2} = \dv{t^2} -R^2(t)[\frac{dr^2}{1-K \cdot r^2}+r^2 \cdot (d\theta^2+sin(\theta)^2 \cdot d\phi ^2)] \quad$
 
 $K=0$  or +/-1
 \footnote{Written by Peter MOUEZA}
