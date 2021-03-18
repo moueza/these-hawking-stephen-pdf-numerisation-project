@@ -5,4 +5,3 @@ For Latex of PAGES/, each page = directory is the charge of 1 person. Keep artic
 
 For Wiki, like Wikipedia everybody can act to everything.
 
-In BOOK/, contribute in adding a script which collects each page of PAGES/.
